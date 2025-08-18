@@ -73,10 +73,11 @@ LP/
 ## 🎯 Personalização
 
 ### Cores Principais
-- **Verde Principal**: `#428b46`
-- **Verde Escuro**: `#2d5a30`
-- **Verde Claro**: `#d6d88b`
-- **Verde Muito Claro**: `#e9eab4`
+- **Verde Escuro**: `#053001`
+- **Verde Médio**: `#808566`
+- **Verde Claro**: `#a7af9a`
+- **Bege**: `#d6ba97`
+- **Dourado (Logo)**: `#d4af37`
 
 ### Fontes
 - **Títulos**: Playfair Display

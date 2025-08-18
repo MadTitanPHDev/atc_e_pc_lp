@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 100) {
-            header.style.background = 'rgba(66, 139, 70, 0.95)';
+            header.style.background = 'rgba(5, 48, 1, 0.95)';
             header.style.backdropFilter = 'blur(10px)';
         } else {
-            header.style.background = 'linear-gradient(135deg, #428b46 0%, #2d5a30 100%)';
+            header.style.background = 'linear-gradient(135deg, #053001 0%, #1a3d0a 100%)';
             header.style.backdropFilter = 'none';
         }
         
