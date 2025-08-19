@@ -8,8 +8,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: white;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(to bottom, rgba(26,61,10,0.8) 100%), url('assets/images/fundoHeader_1.jpg') center/cover;
+    background: linear-gradient(to bottom, rgba(8, 26, 0, 0.8) 100%), url('assets/images/fundoHeader_1.jpg') center/cover;
     color: white;
     position: relative;
     overflow: hidden;
@@ -30,11 +31,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .social-icons {
@@ -107,15 +106,16 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-    line-height: 1.2;
+    color: #f8f9fa;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+    line-height: 1.3;
+    letter-spacing: 0.5px;
 }
 
 /* Specialties Section */
 .specialties {
     padding: 80px 0;
-    background: linear-gradient(135deg, #053001 0%, #1a3d0a 100%);
+    background: linear-gradient(to top, #053001 0%, #1a3d0a 100%);
 }
 
 .section-title {
@@ -125,48 +125,68 @@ body {
     color: #d4af37;
     text-align: center;
     margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .section-description {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 50px;
-    font-size: 18px;
-    color: white;
+    font-size: 1.1rem;
+    color: #f8f9fa;
     line-height: 1.8;
+    font-weight: 400;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .specialties-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .specialty-card {
-    background-color: #808566;
-    padding: 40px 30px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(5, 48, 1, 0.2);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-bottom: 3px solid transparent;
+    position: relative;
 }
 
 .specialty-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+    border-bottom-color: #d4af37;
 }
 
 .specialty-icon {
-    font-size: 3rem;
-    color: #053001;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.specialty-card:hover .specialty-icon {
+    color: #d6ba97;
+    transform: scale(1.1);
 }
 
 .specialty-card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: #000;
+    font-size: 1.3rem;
+    color: #f8f9fa;
     font-weight: 600;
+    margin: 0;
+    transition: color 0.3s ease;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.specialty-card:hover h3 {
+    color: #d6ba97;
 }
 
 /* About Us Section */
@@ -186,15 +206,28 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
 }
 
 .lawyer-card {
     background-color: #808566;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(5, 48, 1, 0.2);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    position: relative;
+}
+
+.lawyer-card:nth-child(1) {
+    transform: translateX(-20px);
+    z-index: 2;
+}
+
+.lawyer-card:nth-child(2) {
+    transform: translateX(20px);
+    z-index: 1;
 }
 
 .lawyer-link {
@@ -204,8 +237,17 @@ body {
 }
 
 .lawyer-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 10px 25px rgba(5, 48, 1, 0.3);
+    z-index: 3;
+}
+
+.lawyer-card:nth-child(1):hover {
+    transform: translateX(-20px) translateY(-5px) scale(1.02);
+}
+
+.lawyer-card:nth-child(2):hover {
+    transform: translateX(20px) translateY(-5px) scale(1.02);
 }
 
 .view-profile {
@@ -229,9 +271,9 @@ body {
 }
 
 .lawyer-photo {
-    width: 200px;
-    height: 250px;
-    margin: 0 auto 20px;
+    width: 150px;
+    height: 180px;
+    margin: 0 auto 15px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -244,28 +286,37 @@ body {
 
 .lawyer-card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    color: #000;
+    font-size: 1.2rem;
+    color: #053001;
     margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 .lawyer-card p {
-    color: #000;
+    color: #2c3e50;
     line-height: 1.6;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .about-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #000;
-    margin-bottom: 30px;
+    color: #053001;
+    margin-bottom: 35px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .about-text p {
-    color: #000;
+    color: #2c3e50;
     line-height: 1.8;
-    margin-bottom: 20px;
-    font-size: 16px;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    text-align: justify;
 }
 
 /* Location Section */
@@ -289,7 +340,7 @@ body {
 
 .office-photo img {
     width: 100%;
-    height: 400px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -297,6 +348,57 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(5, 48, 1, 0.2);
+    height: 250px;
+}
+
+/* Contact Details */
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(5, 48, 1, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateX(5px);
+    border-bottom-color: rgba(5, 48, 1, 0.3);
+}
+
+.contact-icon {
+    color: #053001;
+    font-size: 1.4rem;
+    width: 30px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.contact-info h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: #053001;
+    margin-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contact-info p {
+    color: #2c3e50;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: 400;
 }
 
 /* Footer */
@@ -339,6 +441,7 @@ body {
     font-size: 30px;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .whatsapp-float a:hover {
@@ -359,6 +462,7 @@ body {
     
     .hero-content h2 {
         font-size: 1.8rem;
+        line-height: 1.2;
     }
     
     .about-content {
@@ -366,17 +470,91 @@ body {
         gap: 40px;
     }
     
+    .about-text {
+        order: -1;
+    }
+    
+    .about-text h2 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+    
+    .lawyers {
+        order: 1;
+    }
+    
+    .lawyer-card:nth-child(1),
+    .lawyer-card:nth-child(2) {
+        transform: none;
+    }
+    
+    .lawyer-card:nth-child(1):hover,
+    .lawyer-card:nth-child(2):hover {
+        transform: translateY(-5px) scale(1.02);
+    }
+    
+    .lawyer-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .lawyer-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
     .location-content {
         grid-template-columns: 1fr;
         gap: 30px;
     }
     
+    .contact-details {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    .contact-card {
+        padding: 12px 0;
+        gap: 15px;
+    }
+    
+    .contact-info h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+    
+    .contact-info p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .contact-icon {
+        font-size: 1.3rem;
+        width: 28px;
+    }
+    
     .specialties-grid {
-        grid-template-columns: 1fr;
+        gap: 40px;
+        flex-direction: column;
     }
     
     .section-title {
         font-size: 2rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .specialty-card h3 {
+        font-size: 1.2rem;
     }
 }
 
