@@ -20,7 +20,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #053001 0%, #1a3d0a 100%);
+    background: linear-gradient(to bottom, rgba(26,61,10,0.8) 100%), url('assets/images/fundoHeader_1.jpg') center/cover;
     color: white;
     position: relative;
     overflow: hidden;
@@ -94,8 +94,6 @@ body {
     right: 0;
     width: 50%;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=500&fit=crop') center/cover;
-    opacity: 0.3;
     z-index: 1;
 }
 
@@ -117,14 +115,14 @@ body {
 /* Specialties Section */
 .specialties {
     padding: 80px 0;
-    background-color: #a7af9a;
+    background: linear-gradient(135deg, #053001 0%, #1a3d0a 100%);
 }
 
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #053001;
+    color: #d4af37;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -134,7 +132,7 @@ body {
     max-width: 800px;
     margin: 0 auto 50px;
     font-size: 18px;
-    color: #053001;
+    color: white;
     line-height: 1.8;
 }
 
@@ -167,7 +165,7 @@ body {
 .specialty-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #053001;
+    color: #000;
     font-weight: 600;
 }
 
@@ -247,24 +245,24 @@ body {
 .lawyer-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
-    color: #053001;
+    color: #000;
     margin-bottom: 15px;
 }
 
 .lawyer-card p {
-    color: #053001;
+    color: #000;
     line-height: 1.6;
 }
 
 .about-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #053001;
+    color: #000;
     margin-bottom: 30px;
 }
 
 .about-text p {
-    color: #053001;
+    color: #000;
     line-height: 1.8;
     margin-bottom: 20px;
     font-size: 16px;
@@ -460,13 +458,13 @@ body {
 .profile-info h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #053001;
+    color: #000;
     margin-bottom: 10px;
 }
 
 .profile-info .title {
     font-size: 1.2rem;
-    color: #053001;
+    color: #000;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -480,7 +478,7 @@ body {
 .specialties h3, .contact-info h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
-    color: #053001;
+    color: #000;
     margin-bottom: 15px;
 }
 
@@ -493,7 +491,7 @@ body {
 
 .tag {
     background-color: #808566;
-    color: #053001;
+    color: #000;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -509,11 +507,11 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
-    color: #053001;
+    color: #000;
 }
 
 .contact-item i {
-    color: #053001;
+    color: #000;
     width: 20px;
 }
 
@@ -527,7 +525,7 @@ body {
 .profile-description h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
-    color: #053001;
+    color: #000;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -539,14 +537,14 @@ body {
 .career-section h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #053001;
+    color: #000;
     margin-bottom: 15px;
     border-bottom: 2px solid #808566;
     padding-bottom: 10px;
 }
 
 .career-section p {
-    color: #053001;
+    color: #000;
     line-height: 1.8;
     margin-bottom: 15px;
     font-size: 16px;
@@ -569,7 +567,7 @@ body {
 .area-item h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
-    color: #053001;
+    color: #000;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -577,11 +575,11 @@ body {
 }
 
 .area-item h4 i {
-    color: #053001;
+    color: #000;
 }
 
 .area-item p {
-    color: #053001;
+    color: #000;
     line-height: 1.6;
     font-size: 14px;
 }
@@ -592,7 +590,7 @@ body {
 }
 
 .achievements li {
-    color: #053001;
+    color: #000;
     padding: 8px 0;
     padding-left: 25px;
     position: relative;
@@ -603,7 +601,7 @@ body {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #053001;
+    color: #000;
     font-weight: bold;
 }
 
