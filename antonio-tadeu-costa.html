@@ -11,22 +11,34 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-top">
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="logo">
-                <h1>ATC & PC ADVOCACIA</h1>
-            </div>
-            <div class="schedule-btn">
-                <button class="btn-primary">Agendar horário</button>
-            </div>
-        </div>
-    </header>
+    <div class="bg-home">
+        <header>
+            <nav class="header-content container">
+                <div class="header-icons" data-aos="fade-down">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="assets/images/logo.png" alt="Logo ATC & PC ADVOCACIA">
+                </div>
+
+                <div data-aos="fade-down">
+                    <a class="header-button" href="https://api.whatsapp.com/send?phone=5518981335939&text=Quero%20agendar%20um%20horário!" target="_blank">
+                        Agendar horário
+                    </a>
+                </div>
+
+            </nav>
+        </header>
+    </div>
 
     <!-- Lawyer Profile Section -->
     <section class="lawyer-profile">
@@ -45,7 +57,7 @@
                 <div class="profile-info" data-aos="fade-left" data-aos-delay="200">
                     <h1>Antonio Tadeu da Costa</h1>
                     <p class="title">Advogado</p>
-                    <p class="oab">OAB/SP 175.112</p>
+                    <p class="oab">OAB/SP Nº 175.112</p>
                     
                     
                     
@@ -172,21 +184,7 @@
                     <p>Sempre participou ativamente de programas de formações, de atualizações, de aperfeiçoamentos e de desenvolvimento profissional, em suas áreas de atuações, demonstrando compromisso contínuo com a excelência profissional.</p>
                 </div>
 
-                <div class="career-section" data-aos="fade-up" data-aos-delay="500">
-                    <h3>Quarteto de SST - Segurança e Saúde do Trabalho</h3>
-                    <p>O QUARTETO DE SST (Segurança e Saúde do Trabalho) é um grupo formado por profissionais da área, que tem como integrantes <strong>Antonio Tadeu da Costa</strong>, Claudio Pereira de Lima, Francisley Ferreira Sanches e Wesley de Lima Gaspar.</p>
-                    
-                    <p>Este grupo surgiu no ano de 2018, tendo como um dos seus objetivos, realizar encontros na área de SST, na cidade de Presidente Prudente, no estado de São Paulo.</p>
-                    
-                    <p>Neste ano, o quarteto organizou o <strong>6º. ENCONTRO DE SST</strong>, que foi realizado em <strong>26/07/25</strong>, data esta escolhida em virtude da comemoração ao <strong>53º. aniversário do SESMT</strong> (Serviço Especializado em Segurança e em Medicina do Trabalho) e ao <strong>DNPAT</strong> (Dia Nacional da Prevenção de Acidentes do Trabalho), no dia seguinte (27/07/25, domingo).</p>
-                    
-                    <p>O evento teve, dentre outros, apresentações de cases, palestras, homenagens e exposições de produtos e/ou serviços.</p>
-
-                    <p></p>
-                    
-                    
-                    </div>
-                </div>
+               
                 
                 <div class="profile-header" style="text-align: center; margin-top: 40px;">
                     <a href="index.html" class="back-btn">
@@ -201,6 +199,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+             
                 <div class="footer-logo">
                     <h2>ATC & PC ADVOCACIA</h2>
                 </div>
@@ -209,12 +208,16 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <div class="whatsapp-float">
-        <a href="https://wa.me/5567999999999" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
+    <!-- Button Whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=5518981335939&text=Quero%20agendar%20um%20horário!"
+        class="btn-whatsapp" target="_blank"
+        data-aos="zoom-in-up" data-aos-delay="400"
+        >
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
+        <span class="tooltip-text">
+            Agende seu horário.
+        </span>
+    </a>
 
     <script src="script.js"></script>
 </body>

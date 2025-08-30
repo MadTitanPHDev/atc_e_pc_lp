@@ -7,24 +7,38 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-top">
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="logo">
-                <h1>ATC & PC ADVOCACIA</h1>
-            </div>
-            <div class="schedule-btn">
-                <button class="btn-primary">Agendar horário</button>
-            </div>
-        </div>
-    </header>
+    <div class="bg-home">
+        <header>
+            <nav class="header-content container">
+                <div class="header-icons" data-aos="fade-down">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="assets/images/logo.png" alt="Logo ATC & PC ADVOCACIA">
+                </div>
+
+                <div data-aos="fade-down">
+                    <a class="header-button" href="https://api.whatsapp.com/send?phone=5518981335939&text=Quero%20agendar%20um%20horário!" target="_blank">
+                        Agendar horário
+                    </a>
+                </div>
+
+            </nav>
+        </header>
+    </div>
 
     <!-- Lawyer Profile Section -->
     <section class="lawyer-profile">
@@ -42,8 +56,8 @@
                 
                 <div class="profile-info">
                     <h1>Pedro Thiago Braz da Costa</h1>
-                    <p class="title">Advogado Sênior</p>
-                    <p class="oab">OAB/SP 303.245</p>
+                    <p class="title">Advogado</p>
+                    <p class="oab">OAB/SP Nº 303.245</p>
                     
 
                     
@@ -80,16 +94,18 @@
                 
                 <div class="career-section">
                     <h3>Experiência Profissional</h3>
-                    <p>Pedro Thiago Braz da Costa possui 13 anos de experiência na advocacia, sendo sócio proprietário do escritório ATC Advocacia desde 2011. Sua trajetória profissional é marcada pela dedicação ao direito civil, trabalhista e previdenciário.</p>
+                    <p>Possui mais 13 anos de experiência na advocacia, sendo sócio proprietário do escritório ATC & PC Advocacia 
+                        desde 2011. Sua trajetória profissional é marcada pela dedicação ao direito civil, trabalhista e previdenciário.</p>
                     
-                    <p>Atualmente é proprietário da Sociedade Individual de Advocacia "Pedro Thiago Braz da Costa", inscrita no CNPJ nº 34.040.064/0001-38, demonstrando sólida experiência na gestão de escritório de advocacia.</p>
+                    <p>Atualmente é proprietário da Sociedade Individual de Advocacia "Pedro Thiago Braz da Costa", 
+                        inscrita no CNPJ nº 34.040.064/0001-38, demonstrando sólida experiência na gestão de escritório de advocacia.</p>
                 </div>
                 
                 <div class="career-section">
                     <h3>Trajetória Profissional Detalhada</h3>
                     <div class="areas-grid">
                         <div class="area-item">
-                            <h4><i class="fas fa-balance-scale"></i> ATC Advocacia</h4>
+                            <h4><i class="fas fa-balance-scale"></i> ATC & PC Advocacia</h4>
                             <p><strong>Sócio Proprietário / Advogado</strong> (01/07/2011 - Atual)<br>
                             Atuação como sócio proprietário do escritório, com inscrição na OAB/SP sob o nº 303.245.</p>
                         </div>
@@ -132,7 +148,9 @@
                 
                 <div class="career-section">
                     <h3>Filosofia de Trabalho</h3>
-                    <p>"A advocacia é uma missão que exige dedicação, conhecimento técnico e compromisso com a ética. Minha trajetória profissional demonstra o compromisso com a excelência jurídica e a busca constante pela atualização e aperfeiçoamento. Acredito que cada caso merece atenção especial e um tratamento personalizado, sempre pautado pela ética e pela busca da justiça."</p>
+                    <p>"A advocacia é uma missão que exige dedicação, conhecimento técnico e compromisso com a ética. 
+                        Minha trajetória profissional demonstra o compromisso com a excelência jurídica e a busca constante pela atualização e aperfeiçoamento. 
+                        Acredito que cada caso merece atenção especial e um tratamento personalizado, sempre pautado pela ética e pela busca da justiça."</p>
                 </div>
                 
                 <div class="profile-header" style="text-align: center; margin-top: 40px;">
@@ -156,12 +174,16 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <div class="whatsapp-float">
-        <a href="https://wa.me/5518981335939" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
+    <!-- Button Whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=5518981335939&text=Quero%20agendar%20um%20horário!"
+        class="btn-whatsapp" target="_blank"
+        data-aos="zoom-in-up" data-aos-delay="400"
+        >
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
+        <span class="tooltip-text">
+            Agende seu horário.
+        </span>
+    </a>
 
     <script src="script.js"></script>
 </body>
