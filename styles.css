@@ -189,6 +189,23 @@ body {
     color: #d6ba97;
 }
 
+.specialty-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.specialty-link:hover {
+    color: inherit;
+}
+
+.specialty-card p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: #f8f9fa;
+}
+
 /* About Us Section */
 .about-us {
     padding: 80px 0;
@@ -783,6 +800,49 @@ body {
     font-weight: bold;
 }
 
+/* Quarteto SST Section */
+.quartet-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.quartet-card {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #053001;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quartet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(5, 48, 1, 0.2);
+}
+
+.quartet-icon {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.quartet-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #053001;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.quartet-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
 /* Responsive for Lawyer Profile */
 @media (max-width: 768px) {
     .profile-content {
@@ -811,5 +871,279 @@ body {
     
     .profile-description h2 {
         font-size: 1.8rem;
+    }
+    
+    .quartet-highlights {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .quartet-card {
+        padding: 20px;
+    }
+    
+    .quartet-icon {
+        font-size: 2rem;
+    }
+    
+    .quartet-card h4 {
+        font-size: 1rem;
+    }
+    
+    .quartet-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Event SST Page Styles */
+.event-overview {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    color: #333;
+}
+
+.event-overview .section-title {
+    color: #053001;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.event-overview .section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.event-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.highlight-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-icon {
+    font-size: 3rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.highlight-card h3 {
+    color: #053001;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.highlight-card p {
+    color: #666;
+}
+
+.leadership {
+    background-color: white;
+    padding: 80px 0;
+    color: #333;
+}
+
+.leadership .section-title {
+    color: #053001;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.leadership-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.leader-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.leader-photo {
+    margin-bottom: 20px;
+}
+
+.leader-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #d4af37;
+}
+
+.leader-info h3 {
+    color: #053001;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.leader-role {
+    color: #d4af37;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.leader-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    background-color: #053001;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #d4af37;
+}
+
+.quartet-info h3 {
+    color: #053001;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.quartet-info p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    color: #333;
+}
+
+.event-details .section-title {
+    color: #053001;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.detail-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-icon {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.detail-card h3 {
+    color: #053001;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.detail-card p {
+    color: #666;
+}
+
+.contact-section {
+    background-color: white;
+    padding: 80px 0;
+    color: #333;
+}
+
+.contact-section .section-title {
+    color: #053001;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section .section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #d6ba97;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+/* Responsive for Event SST Page */
+@media (max-width: 768px) {
+    .leadership-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .event-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .leader-card {
+        padding: 20px;
+    }
+    
+    .leader-photo img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-overview,
+    .leadership,
+    .event-details,
+    .contact-section {
+        padding: 50px 0;
     }
 }
