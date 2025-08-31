@@ -28,7 +28,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(0, 51, 0, 0.185), #054100), url("assets/images/fundoHeader_1.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 51, 0, 0.027), #054100), url("assets/images/fundoHeader4.jpg");
     left: 0;
     top: 0;
     width: 100%;
@@ -85,7 +85,7 @@ header {
 }
 
 .header-logo img {
-    max-width: 200px;
+    max-width: 400px;
     height: auto;
 }
 
