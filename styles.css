@@ -5,12 +5,20 @@
     box-sizing: border-box;
 }
 
+/* Forçar cores específicas e evitar modo escuro automático */
+html {
+    color-scheme: light;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: white;
-    background-color: #fff;
+    color: white !important;
+    background-color: #fff !important;
     overflow-x: hidden;
+    /* Forçar cores específicas */
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .container {
@@ -58,14 +66,14 @@ header {
 }
 
 .header-icons a {
-    color: #d6ba97;
+    color: #d6ba97 !important;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .header-icons a:hover i {
     animation: translateY 0.8s infinite alternate;
-    color: #a7af9a;
+    color: #a7af9a !important;
 }
 
 @keyframes translateY {
@@ -90,20 +98,20 @@ header {
 }
 
 .header-button {
-    border: 1px solid #d6ba97;
+    border: 1px solid #d6ba97 !important;
     padding: 8px 24px;
     border-radius: 4px;
-    color: #d6ba97;
-    background-color: transparent;
+    color: #d6ba97 !important;
+    background-color: transparent !important;
     transition: background-color 0.8s;
     text-decoration: none;
     font-weight: 600;
 }
 
 .header-button:hover {
-    border: 1px solid #a7af9a;
-    background-color: #a7af9a;
-    color: #053001;
+    border: 1px solid #a7af9a !important;
+    background-color: #a7af9a !important;
+    color: #053001 !important;
 }
 
 /* Legacy Header Styles (keeping for compatibility) */
@@ -129,27 +137,27 @@ header {
 }
 
 .social-icon {
-    color: #d6ba97;
+    color: #d6ba97 !important;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #a7af9a;
+    color: #a7af9a !important;
 }
 
 .logo h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #d4af37;
+    color: #d4af37 !important;
     text-align: center;
 }
 
 .btn-primary {
-    background-color: #053001;
-    color: white;
-    border: 2px solid #d6ba97;
+    background-color: #053001 !important;
+    color: white !important;
+    border: 2px solid #d6ba97 !important;
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 500;
@@ -159,19 +167,21 @@ header {
 }
 
 .btn-primary:hover {
-    background-color: #d6ba97;
-    color: #053001;
+    background-color: #d6ba97 !important;
+    color: #053001 !important;
 }
 
 /* Hero Section */
 .hero {
-    color: white;
+    color: white !important;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 14px;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .hero h1 {
@@ -181,21 +191,21 @@ header {
     font-size: 46px;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
-    color: #d4af37;
+    color: #d4af37 !important;
 }
 
 .hero p {
     text-align: center;
     margin: 14px 0;
     font-size: 18px;
-    color: #d6ba97;
+    color: #d6ba97 !important;
 }
 
 .button-contact {
     padding: 14px 28px;
-    color: white;
-    background-color: #053001;
-    border: 2px solid #d6ba97;
+    color: white !important;
+    background-color: #053001 !important;
+    border: 2px solid #d6ba97 !important;
     font-size: 18px;
     font-weight: 600;
     margin: 14px 0;
@@ -206,8 +216,8 @@ header {
 
 .button-contact:hover {
     animation: scaleButton 0.8s alternate infinite;
-    background-color: #d6ba97;
-    color: #053001;
+    background-color: #d6ba97 !important;
+    color: #053001 !important;
 }
 
 @keyframes scaleButton {
@@ -258,14 +268,16 @@ header {
 /* Specialties Section */
 .specialties {
     padding: 80px 0;
-    background-color: #054100;
+    background-color: #054100 !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #d4af37;
+    color: #d4af37 !important;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 0.5px;
@@ -277,7 +289,7 @@ header {
     max-width: 800px;
     margin: 0 auto 50px;
     font-size: 1.1rem;
-    color: #f8f9fa;
+    color: #f8f9fa !important;
     line-height: 1.8;
     font-weight: 400;
     text-shadow: 0 1px 2px rgba(0,0,0,0.3);
@@ -307,20 +319,20 @@ header {
 
 .specialty-icon {
     font-size: 2.5rem;
-    color: #d4af37;
+    color: #d4af37 !important;
     margin-bottom: 15px;
     transition: all 0.3s ease;
 }
 
 .specialty-card:hover .specialty-icon {
-    color: #d6ba97;
+    color: #d6ba97 !important;
     transform: scale(1.1);
 }
 
 .specialty-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
-    color: #f8f9fa;
+    color: #f8f9fa !important;
     font-weight: 600;
     margin: 0;
     transition: color 0.3s ease;
@@ -329,7 +341,7 @@ header {
 }
 
 .specialty-card:hover h3 {
-    color: #d6ba97;
+    color: #d6ba97 !important;
 }
 
 .specialty-link {
@@ -352,7 +364,9 @@ header {
 /* About Us Section */
 .about-us {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .about-content {
@@ -370,7 +384,7 @@ header {
 }
 
 .lawyer-card {
-    background-color: #808566;
+    background-color: #808566 !important;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(5, 48, 1, 0.2);
@@ -378,6 +392,8 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 350px;
     position: relative;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .lawyer-card:nth-child(1) {
@@ -417,8 +433,8 @@ header {
     gap: 10px;
     margin-top: 20px;
     padding: 10px;
-    background-color: #053001;
-    color: white;
+    background-color: #053001 !important;
+    color: white !important;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -426,7 +442,7 @@ header {
 }
 
 .lawyer-card:hover .view-profile {
-    background-color: #1a3d0a;
+    background-color: #1a3d0a !important;
     transform: scale(1.05);
 }
 
@@ -447,14 +463,14 @@ header {
 .lawyer-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
-    color: #053001;
+    color: #053001 !important;
     margin-bottom: 15px;
     font-weight: 600;
     letter-spacing: 0.3px;
 }
 
 .lawyer-card p {
-    color: #2c3e50;
+    color: #2c3e50 !important;
     line-height: 1.6;
     font-size: 0.95rem;
     font-weight: 400;
@@ -464,14 +480,14 @@ header {
 .about-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #053001;
+    color: #053001 !important;
     margin-bottom: 35px;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
 .about-text p {
-    color: #2c3e50;
+    color: #2c3e50 !important;
     line-height: 1.8;
     margin-bottom: 25px;
     font-size: 1.05rem;
@@ -482,7 +498,9 @@ header {
 /* Location Section */
 .location {
     padding: 80px 0;
-    background-color: #a7af9a;
+    background-color: #a7af9a !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .location-content {
@@ -537,7 +555,7 @@ header {
 }
 
 .contact-icon {
-    color: #053001;
+    color: #053001 !important;
     font-size: 1.4rem;
     width: 30px;
     text-align: center;
@@ -547,14 +565,14 @@ header {
 .contact-info h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.15rem;
-    color: #053001;
+    color: #053001 !important;
     margin-bottom: 6px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
 .contact-info p {
-    color: #2c3e50;
+    color: #2c3e50 !important;
     line-height: 1.6;
     font-size: 1.05rem;
     margin: 0;
@@ -563,21 +581,23 @@ header {
 
 /* Footer */
 .footer {
-    background-color: #053001;
-    color: white;
+    background-color: #053001 !important;
+    color: white !important;
     padding: 40px 0;
     text-align: center;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .footer-logo h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: #d4af37;
+    color: #d4af37 !important;
     margin-bottom: 20px;
 }
 
 .copyright {
-    color: #d6ba97;
+    color: #d6ba97 !important;
     font-size: 14px;
 }
 
@@ -748,7 +768,9 @@ header {
 /* Lawyer Profile Pages */
 .lawyer-profile {
     padding: 40px 0;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .profile-header {
@@ -759,14 +781,14 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: #053001;
+    color: #053001 !important;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .back-btn:hover {
-    color: #1a3d0a;
+    color: #1a3d0a !important;
 }
 
 .profile-content {
@@ -774,10 +796,12 @@ header {
     grid-template-columns: 300px 1fr;
     gap: 50px;
     margin-bottom: 60px;
-    background-color: white;
+    background-color: white !important;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(5, 48, 1, 0.1);
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .profile-photo {
@@ -796,27 +820,27 @@ header {
 .profile-info h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #000;
+    color: #000 !important;
     margin-bottom: 10px;
 }
 
 .profile-info .title {
     font-size: 1.2rem;
-    color: #000;
+    color: #000 !important;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 .profile-info .oab {
     font-size: 1rem;
-    color: #666;
+    color: #666 !important;
     margin-bottom: 30px;
 }
 
 .specialties h3, .contact-info h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
-    color: #000;
+    color: #000 !important;
     margin-bottom: 15px;
 }
 
@@ -828,8 +852,8 @@ header {
 }
 
 .tag {
-    background-color: #808566;
-    color: #000;
+    background-color: #808566 !important;
+    color: #000 !important;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -845,25 +869,27 @@ header {
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
-    color: #000;
+    color: #000 !important;
 }
 
 .contact-item i {
-    color: #000;
+    color: #000 !important;
     width: 20px;
 }
 
 .profile-description {
-    background-color: white;
+    background-color: white !important;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(5, 48, 1, 0.1);
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .profile-description h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
-    color: #000;
+    color: #000 !important;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -875,14 +901,14 @@ header {
 .career-section h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #000;
+    color: #000 !important;
     margin-bottom: 15px;
-    border-bottom: 2px solid #808566;
+    border-bottom: 2px solid #808566 !important;
     padding-bottom: 10px;
 }
 
 .career-section p {
-    color: #000;
+    color: #000 !important;
     line-height: 1.8;
     margin-bottom: 15px;
     font-size: 16px;
@@ -896,16 +922,18 @@ header {
 }
 
 .area-item {
-    background-color: #a7af9a;
+    background-color: #a7af9a !important;
     padding: 25px;
     border-radius: 10px;
-    border-left: 4px solid #053001;
+    border-left: 4px solid #053001 !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .area-item h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
-    color: #000;
+    color: #000 !important;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -913,11 +941,11 @@ header {
 }
 
 .area-item h4 i {
-    color: #000;
+    color: #000 !important;
 }
 
 .area-item p {
-    color: #000;
+    color: #000 !important;
     line-height: 1.6;
     font-size: 14px;
 }
@@ -928,7 +956,7 @@ header {
 }
 
 .achievements li {
-    color: #000;
+    color: #000 !important;
     padding: 8px 0;
     padding-left: 25px;
     position: relative;
@@ -939,7 +967,7 @@ header {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #000;
+    color: #000 !important;
     font-weight: bold;
 }
 
@@ -952,12 +980,14 @@ header {
 }
 
 .quartet-card {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-    border-left: 4px solid #053001;
+    border-left: 4px solid #053001 !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .quartet-card:hover {
@@ -967,20 +997,20 @@ header {
 
 .quartet-icon {
     font-size: 2.5rem;
-    color: #d4af37;
+    color: #d4af37 !important;
     margin-bottom: 15px;
 }
 
 .quartet-card h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
-    color: #053001;
+    color: #053001 !important;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
 .quartet-card p {
-    color: #666;
+    color: #666 !important;
     font-size: 0.9rem;
     line-height: 1.4;
     margin: 0;
@@ -1040,13 +1070,15 @@ header {
 
 /* Event SST Page Styles */
 .event-overview {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
     padding: 80px 0;
-    color: #333;
+    color: #333 !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .event-overview .section-title {
-    color: #053001;
+    color: #053001 !important;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -1055,7 +1087,7 @@ header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 50px;
-    color: #666;
+    color: #666 !important;
     line-height: 1.8;
 }
 
@@ -1067,12 +1099,14 @@ header {
 }
 
 .highlight-card {
-    background: white;
+    background: white !important;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .highlight-card:hover {
@@ -1081,28 +1115,30 @@ header {
 
 .highlight-icon {
     font-size: 3rem;
-    color: #d4af37;
+    color: #d4af37 !important;
     margin-bottom: 20px;
 }
 
 .highlight-card h3 {
-    color: #053001;
+    color: #053001 !important;
     font-family: 'Playfair Display', serif;
     margin-bottom: 15px;
 }
 
 .highlight-card p {
-    color: #666;
+    color: #666 !important;
 }
 
 .leadership {
-    background-color: white;
+    background-color: white !important;
     padding: 80px 0;
-    color: #333;
+    color: #333 !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .leadership .section-title {
-    color: #053001;
+    color: #053001 !important;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1115,11 +1151,13 @@ header {
 }
 
 .leader-card {
-    background: #f8f9fa;
+    background: #f8f9fa !important;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .leader-photo {
@@ -1135,26 +1173,26 @@ header {
 }
 
 .leader-info h3 {
-    color: #053001;
+    color: #053001 !important;
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
 }
 
 .leader-role {
-    color: #d4af37;
+    color: #d4af37 !important;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .leader-info p {
-    color: #666;
+    color: #666 !important;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
 .btn-secondary {
-    background-color: #053001;
-    color: white;
+    background-color: #053001 !important;
+    color: white !important;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -1163,30 +1201,32 @@ header {
 }
 
 .btn-secondary:hover {
-    background-color: #d4af37;
+    background-color: #d4af37 !important;
 }
 
 .quartet-info h3 {
-    color: #053001;
+    color: #053001 !important;
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
 
 .quartet-info p {
-    color: #666;
+    color: #666 !important;
     line-height: 1.8;
     margin-bottom: 20px;
 }
 
 .event-details {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
     padding: 80px 0;
-    color: #333;
+    color: #333 !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .event-details .section-title {
-    color: #053001;
+    color: #053001 !important;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1198,12 +1238,14 @@ header {
 }
 
 .detail-card {
-    background: white;
+    background: white !important;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .detail-card:hover {
@@ -1212,28 +1254,30 @@ header {
 
 .detail-icon {
     font-size: 2.5rem;
-    color: #d4af37;
+    color: #d4af37 !important;
     margin-bottom: 20px;
 }
 
 .detail-card h3 {
-    color: #053001;
+    color: #053001 !important;
     font-family: 'Playfair Display', serif;
     margin-bottom: 15px;
 }
 
 .detail-card p {
-    color: #666;
+    color: #666 !important;
 }
 
 .contact-section {
-    background-color: white;
+    background-color: white !important;
     padding: 80px 0;
-    color: #333;
+    color: #333 !important;
+    color-scheme: light;
+    -webkit-color-scheme: light;
 }
 
 .contact-section .section-title {
-    color: #053001;
+    color: #053001 !important;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -1242,13 +1286,13 @@ header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 50px;
-    color: #666;
+    color: #666 !important;
     line-height: 1.8;
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: #d6ba97;
+    color: #d6ba97 !important;
     margin-top: 20px;
     font-weight: 300;
 }
