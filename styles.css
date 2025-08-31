@@ -43,7 +43,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(0, 51, 0, 0.027), #054100), url("assets/images/fundoHeader4.jpg");
+    background-image: linear-gradient(to bottom, rgba(1, 51, 1, 0), #054100), url("assets/images/backgroundimg.png");
     left: 0;
     top: 0;
     width: 100%;
@@ -68,6 +68,7 @@ header {
     padding: 20px 0;
     width: 100%;
     box-sizing: border-box;
+    
 }
 
 .header-icons {
@@ -99,13 +100,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 14px; */
+    margin-top: 14px;
 }
 
 .header-logo img {
     max-width: 100%;
     width: 100%;
-    height: auto;
+    height: 300px;
 }
 
 .header-button {
@@ -127,7 +128,7 @@ header {
 
 /* Legacy Header Styles (keeping for compatibility) */
 .header {
-     background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #06121e), url('assets/images/fundoHeader4.jpg');
+     /* background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #06121e), url('assets/images/fundoHeader4.jpg'); */
     color: white;
     position: relative;
     overflow: hidden;
@@ -284,7 +285,7 @@ header {
 /* Specialties Section */
 .specialties {
     padding: 80px 0;
-    background-color: #054100 !important;
+    background-color: #1a5320 !important;
     width: 100%;
     overflow-x: hidden;
     color-scheme: light;
@@ -317,7 +318,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     margin-top: 50px;
     flex-wrap: wrap;
     width: 100%;
@@ -621,11 +622,24 @@ header {
     -webkit-color-scheme: light;
 }
 
-.footer-logo h2 {
+/* .footer-logo h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: #d4af37 !important;
     margin-bottom: 20px;
+} */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 14px; */
+}
+
+.footer-logo img {
+    max-width: 50%;
+    
+    height: auto;
 }
 
 .copyright {

@@ -1,14 +1,7 @@
-/* Variables */
-:root {
-    --white-normal: #ffffff;
-    --red-normal: #d94140;
-    --red-light: #d34040;
-    --black-normal: #0c0c0c;
-    --primary-normal: #06121e;
-}
+
 
 /* Forçar cores específicas e evitar modo escuro automático */
-html {
+/* html {
     color-scheme: light;
     overflow-x: hidden;
 }
@@ -19,7 +12,7 @@ body {
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
-}
+} */
 
 /* Reset and base styles */
 * {
