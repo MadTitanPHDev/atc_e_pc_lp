@@ -99,11 +99,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 14px;
+    /* margin-top: 14px; */
 }
 
 .header-logo img {
-    max-width: 400px;
+    max-width: 100%;
     width: 100%;
     height: auto;
 }
@@ -267,7 +267,8 @@ header {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .hero-content h2 {
@@ -303,7 +304,7 @@ header {
 
 .section-description {
     text-align: center;
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto 50px;
     font-size: 1.1rem;
     color: #f8f9fa !important;
@@ -420,12 +421,12 @@ header {
 }
 
 .lawyer-card:nth-child(1) {
-    transform: translateX(-20px);
+    transform: translateY(-10px);
     z-index: 2;
 }
 
 .lawyer-card:nth-child(2) {
-    transform: translateX(20px);
+    transform: translateY(10px);
     z-index: 1;
 }
 
@@ -442,11 +443,11 @@ header {
 }
 
 .lawyer-card:nth-child(1):hover {
-    transform: translateX(-20px) translateY(-5px) scale(1.02);
+    transform: translateY(-15px) scale(1.02);
 }
 
 .lawyer-card:nth-child(2):hover {
-    transform: translateX(20px) translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);
 }
 
 .view-profile {
@@ -559,10 +560,10 @@ header {
 /* Contact Details */
 .contact-details {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     margin-top: 50px;
-    max-width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -579,7 +580,7 @@ header {
 }
 
 .contact-card:hover {
-    transform: translateX(5px);
+    transform: translateY(-2px);
     border-bottom-color: rgba(5, 48, 1, 0.3);
 }
 
@@ -1023,7 +1024,7 @@ header {
 
 .areas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
     margin-top: 20px;
     width: 100%;
@@ -1206,7 +1207,7 @@ header {
 
 .event-overview .section-description {
     text-align: center;
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto 50px;
     color: #666 !important;
     line-height: 1.8;
@@ -1214,7 +1215,7 @@ header {
 
 .event-highlights {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     margin-top: 50px;
     width: 100%;
@@ -1417,7 +1418,7 @@ header {
 
 .contact-section .section-description {
     text-align: center;
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto 50px;
     color: #666 !important;
     line-height: 1.8;

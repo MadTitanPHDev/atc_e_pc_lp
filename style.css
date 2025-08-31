@@ -117,7 +117,7 @@ header {
 }
 
 .header-logo img {
-    max-width: 200px;
+    max-width: 240px;
     width: 100%;
     height: auto;
 }
@@ -215,7 +215,8 @@ header {
 }
 
 .about-content img {
-    max-width: 970px;
+    max-width: 100%;
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -287,13 +288,15 @@ header {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 0 44px 34px 44px;
+    padding: 0 20px 34px 20px;
     flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .haircut {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -312,7 +315,7 @@ header {
 
 .haircut img {
     width: 100%;
-    max-width: 354px;
+    max-width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.2s;
@@ -456,7 +459,7 @@ header {
     }
 
     .header-logo img {
-        width: 160px;
+        width: 192px;
         margin-top: 46px;
     }
 
