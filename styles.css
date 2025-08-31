@@ -8,6 +8,7 @@
 /* Forçar cores específicas e evitar modo escuro automático */
 html {
     color-scheme: light;
+    overflow-x: hidden;
 }
 
 body {
@@ -16,6 +17,8 @@ body {
     color: white !important;
     background-color: #fff !important;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
     /* Forçar cores específicas */
     color-scheme: light;
     -webkit-color-scheme: light;
@@ -25,11 +28,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Background Home */
 .bg-home {
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .bg-home::before {
@@ -51,6 +58,7 @@ body {
 /* Header */
 header {
     width: 100%;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -58,6 +66,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header-icons {
@@ -94,6 +104,7 @@ header {
 
 .header-logo img {
     max-width: 400px;
+    width: 100%;
     height: auto;
 }
 
@@ -180,6 +191,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 14px;
+    width: 100%;
+    box-sizing: border-box;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -188,10 +201,12 @@ header {
     text-align: center;
     line-height: 150%;
     max-width: 940px;
+    width: 100%;
     font-size: 46px;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
     color: #d4af37 !important;
+    box-sizing: border-box;
 }
 
 .hero p {
@@ -269,6 +284,8 @@ header {
 .specialties {
     padding: 80px 0;
     background-color: #054100 !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -302,6 +319,8 @@ header {
     gap: 60px;
     margin-top: 50px;
     flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .specialty-card {
@@ -365,6 +384,8 @@ header {
 .about-us {
     padding: 80px 0;
     background-color: #f8f9fa !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -374,6 +395,8 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: start;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .lawyers {
@@ -499,6 +522,8 @@ header {
 .location {
     padding: 80px 0;
     background-color: #a7af9a !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -508,6 +533,8 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .office-photo {
@@ -538,6 +565,8 @@ header {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-card {
@@ -585,6 +614,8 @@ header {
     color: white !important;
     padding: 40px 0;
     text-align: center;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -736,11 +767,40 @@ header {
     .specialty-card h3 {
         font-size: 1.2rem;
     }
+    
+    /* Correções para evitar overflow */
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header-content {
+        padding: 20px 15px;
+    }
+    
+    .hero {
+        padding: 14px 15px;
+    }
+    
+    .hero h1 {
+        font-size: 34px;
+        padding: 0;
+    }
+    
+    .specialties,
+    .about-us,
+    .location,
+    .event-overview,
+    .leadership,
+    .event-details,
+    .contact-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 10px;
     }
     
     .hero-content h2 {
@@ -763,12 +823,55 @@ header {
         width: 150px;
         height: 200px;
     }
+    
+    /* Correções adicionais para telas muito pequenas */
+    .header-content {
+        padding: 20px 10px;
+    }
+    
+    .hero {
+        padding: 14px 10px;
+    }
+    
+    .hero h1 {
+        font-size: 24px;
+        padding: 0;
+    }
+    
+    .specialties,
+    .about-us,
+    .location,
+    .event-overview,
+    .leadership,
+    .event-details,
+    .contact-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .specialties-grid {
+        gap: 20px;
+    }
+    
+    .about-content {
+        gap: 20px;
+    }
+    
+    .location-content {
+        gap: 20px;
+    }
+    
+    .contact-details {
+        gap: 15px;
+    }
 }
 
 /* Lawyer Profile Pages */
 .lawyer-profile {
     padding: 40px 0;
     background-color: #f8f9fa !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -800,6 +903,8 @@ header {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(5, 48, 1, 0.1);
+    width: 100%;
+    box-sizing: border-box;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -882,6 +987,8 @@ header {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(5, 48, 1, 0.1);
+    width: 100%;
+    box-sizing: border-box;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -919,6 +1026,8 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .area-item {
@@ -977,6 +1086,8 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
     margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .quartet-card {
@@ -1066,6 +1177,14 @@ header {
     .quartet-card p {
         font-size: 0.85rem;
     }
+    
+    /* Correções para evitar overflow */
+    .profile-content,
+    .profile-description {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100% - 30px);
+    }
 }
 
 /* Event SST Page Styles */
@@ -1073,6 +1192,8 @@ header {
     background-color: #f8f9fa !important;
     padding: 80px 0;
     color: #333 !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -1096,6 +1217,8 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .highlight-card {
@@ -1133,6 +1256,8 @@ header {
     background-color: white !important;
     padding: 80px 0;
     color: #333 !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -1148,6 +1273,8 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: start;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .leader-card {
@@ -1221,6 +1348,8 @@ header {
     background-color: #f8f9fa !important;
     padding: 80px 0;
     color: #333 !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -1235,6 +1364,8 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .detail-card {
@@ -1272,6 +1403,8 @@ header {
     background-color: white !important;
     padding: 80px 0;
     color: #333 !important;
+    width: 100%;
+    overflow-x: hidden;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -1320,6 +1453,15 @@ header {
         width: 120px;
         height: 120px;
     }
+    
+    /* Correções para evitar overflow */
+    .leadership-content,
+    .event-highlights,
+    .details-grid {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100% - 30px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1333,6 +1475,22 @@ header {
     .contact-section {
         padding: 50px 0;
     }
+    
+    /* Correções adicionais para telas muito pequenas */
+    .leadership-content,
+    .event-highlights,
+    .details-grid {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px);
+    }
+    
+    .profile-content,
+    .profile-description {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px);
+    }
 }
 
 /* Responsive Design for New Header Structure */
@@ -1342,6 +1500,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 20px 15px;
     }
 
     .header-icons {
@@ -1363,11 +1522,12 @@ header {
 
     .hero {
         min-height: 60vh;
+        padding: 14px 15px;
     }
 
     .hero h1 {
         font-size: 34px;
-        padding: 0 14px;
+        padding: 0;
         width: 100%;
     }
 
@@ -1379,11 +1539,12 @@ header {
 @media screen and (max-width: 720px) {
     .hero {
         min-height: 60vh;
+        padding: 14px 15px;
     }
 
     .hero h1 {
         font-size: 34px;
-        padding: 0 14px;
+        padding: 0;
         width: 100%;
     }
 
@@ -1395,6 +1556,15 @@ header {
 @media screen and (max-width: 480px) {
     .hero h1 {
         font-size: 24px;
+    }
+    
+    /* Correções para telas muito pequenas */
+    .header-content {
+        padding: 20px 10px;
+    }
+    
+    .hero {
+        padding: 14px 10px;
     }
 }
 

@@ -10,11 +10,15 @@
 /* Forçar cores específicas e evitar modo escuro automático */
 html {
     color-scheme: light;
+    overflow-x: hidden;
 }
 
 body {
     color-scheme: light;
     -webkit-color-scheme: light;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Reset and base styles */
@@ -30,17 +34,24 @@ body {
     color: var(--white-normal) !important;
     color-scheme: light;
     -webkit-color-scheme: light;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Background Home */
 .bg-home {
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .bg-home::before {
@@ -62,6 +73,7 @@ body {
 /* Header */
 header {
     width: 100%;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -69,6 +81,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header-icons {
@@ -104,6 +118,7 @@ header {
 
 .header-logo img {
     max-width: 200px;
+    width: 100%;
     height: auto;
 }
 
@@ -132,6 +147,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 14px;
+    width: 100%;
+    box-sizing: border-box;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -140,8 +157,10 @@ header {
     text-align: center;
     line-height: 150%;
     max-width: 940px;
+    width: 100%;
     font-size: 46px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .hero p {
@@ -182,6 +201,7 @@ header {
     background-color: var(--primary-normal) !important;
     overflow: hidden;
     color: var(--white-normal) !important;
+    width: 100%;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -225,6 +245,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 54px 14px;
+    width: 100%;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -342,6 +363,7 @@ header {
     gap: 24px;
     color: var(--white-normal) !important;
     background-color: var(--primary-normal) !important;
+    width: 100%;
     color-scheme: light;
     -webkit-color-scheme: light;
 }
@@ -422,6 +444,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 20px 15px;
     }
 
     .header-icons {
@@ -455,27 +478,38 @@ header {
 
     .hero {
         min-height: 60vh;
+        padding: 14px 15px;
     }
 
     .hero h1 {
         font-size: 34px;
-        padding: 0 14px;
+        padding: 0;
         width: 100%;
     }
 
     .hero p {
         font-size: 14px;
     }
+    
+    /* Correções para evitar overflow */
+    .container {
+        padding: 0 15px;
+    }
+    
+    .services {
+        padding: 54px 15px;
+    }
 }
 
 @media screen and (max-width: 720px) {
     .hero {
         min-height: 60vh;
+        padding: 14px 15px;
     }
 
     .hero h1 {
         font-size: 34px;
-        padding: 0 14px;
+        padding: 0;
         width: 100%;
     }
 
@@ -496,5 +530,22 @@ header {
 
     .btn-whatsapp i {
         font-size: 20px;
+    }
+    
+    /* Correções para telas muito pequenas */
+    .container {
+        padding: 0 10px;
+    }
+    
+    .header-content {
+        padding: 20px 10px;
+    }
+    
+    .hero {
+        padding: 14px 10px;
+    }
+    
+    .services {
+        padding: 54px 10px;
     }
 }
