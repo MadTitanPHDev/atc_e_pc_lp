@@ -28,6 +28,7 @@ body {
     padding: 0 20px;
     width: 100%;
     box-sizing: border-box;
+    
 }
 
 /* Background Home */
@@ -66,7 +67,7 @@ header {
     padding: 20px 0;
     width: 100%;
     box-sizing: border-box;
-    
+   
 }
 
 .header-icons {
