@@ -13,17 +13,21 @@
     <meta property="og:title" content="ATC & PC ADVOCACIA - Advogados Especializados | Presidente Prudente">
     <meta property="og:description" content="Escritório de advocacia com mais de 35 anos de experiência. Especialistas em Direito Civil, Trabalhista, Previdenciário e Empresarial.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://atcepcadvocacia.adv.br">
-    <meta property="og:image" content="https://atcepcadvocacia.adv.br/assets/images/logo_ATC_2.svg">
+    <meta property="og:url" content="https://atcepc.adv.br">
+    <meta property="og:image" content="https://atcepc.adv.br/assets/images/logo_ATC_2.svg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ATC & PC ADVOCACIA - Advogados Especializados">
     <meta name="twitter:description" content="Escritório de advocacia com mais de 35 anos de experiência em Presidente Prudente.">
-    <link rel="canonical" href="https://atcepcadvocacia.adv.br">
+    <link rel="canonical" href="https://atcepc.adv.br">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Preconnects for font loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload critical font stylesheet (browser will fetch earlier) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -32,8 +36,8 @@
         "@type": "LegalService",
         "name": "ATC & PC ADVOCACIA",
         "description": "Escritório de advocacia especializado em Direito Civil, Trabalhista, Previdenciário e Empresarial em Presidente Prudente",
-        "url": "https://atcepcadvocacia.adv.br",
-        "logo": "https://atcepcadvocacia.adv.br/assets/images/logo_ATC_2.svg",
+    "url": "https://atcepc.adv.br",
+    "logo": "https://atcepc.adv.br/assets/images/logo_ATC_2.svg",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "R. Amarílio Rocha, 18",
@@ -43,7 +47,7 @@
             "postalCode": "19015-000"
         },
         "telephone": ["+55-18-98133-5939", "+55-18-99772-4777"],
-        "email": ["atc@atcepcadvocacia.adv.br", "pc@atcepcadvocacia.adv.br"],
+    "email": ["atc@atcepc.adv.br", "pc@atcepc.adv.br"],
         "openingHours": "Mo-Fr 08:00-18:00",
         "areaServed": {
             "@type": "City",
@@ -159,7 +163,7 @@
                     <div class="lawyer-card" data-aos="zoom-in" data-aos-delay="100">
                         <a href="antonio-tadeu-costa.html" class="lawyer-link">
                             <div class="lawyer-photo">
-                                <img src="assets/images/ATC.jpg" alt="Antonio Tadeu da Costa">
+                                    <img src="assets/images/ATC.jpg" alt="Antonio Tadeu da Costa" loading="lazy" width="300" height="400">
                             </div>
                             <h3>Antonio Tadeu da Costa</h3>
                             <p>Advogado, com seus mais 35 anos de atuação no SENAC, com ênfase na area de segurança e saúde do trabalho,
@@ -173,7 +177,7 @@
                     <div class="lawyer-card" data-aos="zoom-in" data-aos-delay="200">
                         <a href="pedro-thiago-costa.html" class="lawyer-link">
                             <div class="lawyer-photo">
-                                <img src="assets/images/PEDRO.jpeg" alt="Pedro Thiago Braz da Costa">
+                                <img src="assets/images/PEDRO.jpeg" alt="Pedro Thiago Braz da Costa" loading="lazy" width="300" height="400">
                             </div>
                             <h3>Pedro Thiago Braz da Costa</h3>
                             <p>Advogado com mais 13 anos de experiência, sócio proprietário do escritório ATC & PC Advocacia. Especialista em Direito Civil, Trabalhista e Previdenciário. 
@@ -220,7 +224,7 @@
             </p>
             <div class="location-content">
                 <div class="office-photo" data-aos="fade-right" data-aos-delay="150">
-                    <img src="assets/images/escritorio.jpg" alt="Frente do Escritório">
+                    <img src="assets/images/escritorio.jpg" alt="Frente do Escritório" loading="lazy">
                 </div>
                 <div class="map-container" data-aos="fade-left" data-aos-delay="250">
                     <iframe 
@@ -262,8 +266,8 @@
                     </div>
                     <div class="contact-info">
                         <h3>E-mail</h3>
-                        <p>atc@atcepcadvocacia.adv.br</p>
-                        <p>pc@atcepcadvocacia.adv.br</p>
+                        <p>atc@atcepc.adv.br</p>
+                        <p>pc@atcepc.adv.br</p>
                         
                     </div>
                 </div>
@@ -286,7 +290,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/logo_ATC_2.svg" alt="Logo ATC & PC ADVOCACIA">
+                    <img src="assets/images/logo_ATC_2.svg" alt="Logo ATC & PC ADVOCACIA" loading="lazy">
                 </div>
                 <p class="copyright">Copyright© 2025 | ATC & PC Advogados - Todos os direitos reservados.</p>
             </div>
@@ -300,6 +304,7 @@
         </a>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="script.js"></script>
 </body>
 </html>
